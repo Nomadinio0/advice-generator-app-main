@@ -50,6 +50,11 @@ body .container .diceBtn {
   height: 70px;
   border-radius: 35px;
   background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+body .container .diceBtn:hover {
+  box-shadow: 0px 0px 20px 5px rgb(82, 255, 166);
 }
 body .container .diceBtn img {
   margin: auto;
