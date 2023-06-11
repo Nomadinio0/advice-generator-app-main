@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+body .container {
+  width: 340px;
+  height: 400px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  text-align: center;
+}
+body .attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
