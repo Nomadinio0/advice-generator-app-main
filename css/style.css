@@ -15,11 +15,40 @@ body {
   color: hsl(193, 38%, 86%);
 }
 body .container {
+  position: relative;
   width: 340px;
-  height: 400px;
+  height: auto;
   background-color: hsl(217, 19%, 24%);
   border-radius: 10px;
   text-align: center;
+}
+body .container .heading {
+  padding: 45px 0 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: hsl(150, 100%, 66%);
+}
+body .container .text {
+  padding: 0 25px;
+  font-size: 22px;
+}
+body .container .divider {
+  padding: 30px 0 60px 0;
+}
+body .container .diceBtn {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: hsl(150, 100%, 66%);
+}
+body .container .diceBtn img {
+  margin: auto;
 }
 body .attribution {
   position: absolute;

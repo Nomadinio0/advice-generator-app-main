@@ -17,11 +17,45 @@ body {
 	color: $lightCyan;
 
 	.container {
+		position: relative;
 		width: 340px;
-		height: 400px;
+		height: auto;
 		background-color: $darkGrayishBlue;
 		border-radius: 10px;
-        text-align: center;
+		text-align: center;
+
+		.heading {
+			padding: 45px 0 25px 0;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			color: $neonGreen;
+		}
+
+		.text {
+			padding: 0 25px;
+			font-size: 22px;
+		}
+
+		.divider {
+			padding: 30px 0 60px 0;
+		}
+
+		.diceBtn {
+			display: flex;
+			position: absolute;
+			left: 50%;
+			bottom: -20%;
+			transform: translate(-50%, -50%);
+			margin: auto;
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			background-color: $neonGreen;
+
+			img {
+				margin: auto;
+			}
+		}
 	}
 
 	.attribution {
