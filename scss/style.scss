@@ -36,15 +36,20 @@ body {
 			font-size: 22px;
 		}
 
-		.divider {
+		.divider_mobile {
 			padding: 30px 0 60px 0;
+		}
+
+		.divider_desktop {
+			display: none;
+			padding: 40px 0 80px 0;
 		}
 
 		.diceBtn {
 			display: flex;
 			position: absolute;
 			left: 50%;
-			bottom: -20%;
+			bottom: -70px;
 			transform: translate(-50%, -50%);
 			margin: auto;
 			width: 70px;
@@ -65,6 +70,30 @@ body {
 		text-align: center;
 		a {
 			color: hsl(228, 45%, 44%);
+		}
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		.container {
+			width: 520px;
+
+			.text {
+				font-size: 26px;
+			}
+
+			.divider_mobile {
+				display: none;
+			}
+
+			.divider_desktop {
+				display: inline-block;
+			}
+
+			.diceBtn {
+				bottom: -70px;
+			}
 		}
 	}
 }

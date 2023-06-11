@@ -32,14 +32,18 @@ body .container .text {
   padding: 0 25px;
   font-size: 22px;
 }
-body .container .divider {
+body .container .divider_mobile {
   padding: 30px 0 60px 0;
+}
+body .container .divider_desktop {
+  display: none;
+  padding: 40px 0 80px 0;
 }
 body .container .diceBtn {
   display: flex;
   position: absolute;
   left: 50%;
-  bottom: -20%;
+  bottom: -70px;
   transform: translate(-50%, -50%);
   margin: auto;
   width: 70px;
@@ -58,4 +62,22 @@ body .attribution {
 }
 body .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body .container {
+    width: 520px;
+  }
+  body .container .text {
+    font-size: 26px;
+  }
+  body .container .divider_mobile {
+    display: none;
+  }
+  body .container .divider_desktop {
+    display: inline-block;
+  }
+  body .container .diceBtn {
+    bottom: -70px;
+  }
 }/*# sourceMappingURL=style.css.map */
